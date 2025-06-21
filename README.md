@@ -7,14 +7,14 @@ This tool was created to efficiently generate 200+ certificates for the Summer C
 
 CERTIFICATE_AUTOMATION/
 │
-├── Certificate_automation/            # (Optional) Source code folder
-├── Certificate_automation.git/        # Git repository folder
-├── output/                            # Generated certificates will be saved here
+├── Certificate_automation/            
+├── Certificate_automation.git/        
+├── output/                            
 │
-├── .gitignore                         # Git ignore rules
-├── Certificate_template.png           # Certificate template image
-├── generate_certificates.py           # Main automation script
-├── Summer code quest registrations.xlsx # Excel file with participant data
+├── .gitignore                       
+├── Certificate_template.png 
+|── generate_certificates.py
+├── Summer code quest registrations.xlsx
 
 
 🚀 Features
