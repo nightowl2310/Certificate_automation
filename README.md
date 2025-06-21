@@ -7,7 +7,7 @@ This tool was created to efficiently generate 200+ certificates for the Summer C
 
 CERTIFICATE_AUTOMATION/
 │
-├── Certificate_automation/            
+|── Certificate_automation/            
 ├── Certificate_automation.git/        
 ├── output/                            
 │
