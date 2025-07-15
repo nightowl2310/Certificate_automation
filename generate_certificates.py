@@ -3,13 +3,13 @@ import pandas as pd
 import os
 
 # Load the Excel file
-df = pd.read_excel('Summer code quest registrations.xlsx')  # Make sure column is called 'Name'
+df = pd.read_excel('final_shortlist.xlsx')  # Make sure column is called 'Name'
 
 # Load certificate template
-TEMPLATE_PATH = 'certificate_template.png'
+TEMPLATE_PATH = 'Certificate of Bootcamp-Updated (3).png'
 OUTPUT_DIR = 'output'
 FONT_PATH = 'arial.ttf'  # Change if you want a custom font
-FONT_SIZE = 45
+FONT_SIZE = 100
 
 # Create output folder if it doesn't exist
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -27,7 +27,7 @@ for index, row in df.iterrows():
     text_width = draw.textlength(name, font=font)
     image_width, image_height = image.size
     x = (image_width - text_width) / 2  # Centered horizontally
-    y = 430  # Adjust based on your template (vertical position)
+    y = 690 # Adjust based on your template (vertical position)
 
     # Draw name
     draw.text((x, y), name, fill="black", font=font)
@@ -37,5 +37,6 @@ for index, row in df.iterrows():
     image.save(os.path.join(OUTPUT_DIR, file_name))
 
     print(f"✅ Certificate generated for {name}")
+    
 
 print("🎉 All certificates generated!")
