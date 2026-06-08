@@ -3,10 +3,10 @@ import pandas as pd
 import os
 
 # Load the Excel file
-df = pd.read_excel('automation test.xlsx')  # Make sure column is called 'Name'
+df = pd.read_excel('test.xlsx')  # Make sure column is called 'Name'
 
 # Load certificate template
-TEMPLATE_PATH = 'AI unpluged certificate.png'
+TEMPLATE_PATH = 'certificate.png'
 OUTPUT_DIR = 'output'
 FONT_PATH = 'arial'  # Change if you want a custom font
 FONT_SIZE = 65
@@ -29,7 +29,7 @@ for index, row in df.iterrows():
     image_width, image_height = image.size
     # x= 582  # Adjust based on your template (horizontal position)
     x = (image_width - text_width) / 2  # Centered horizontally
-    y = 650  # Adjust based on your template (vertical position)
+    y = 790  # Adjust based on your template (vertical position)
 
     # Draw name
     draw.text((x, y), name, fill="black", font=font)
